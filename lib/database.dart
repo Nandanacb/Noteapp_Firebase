@@ -9,4 +9,8 @@ class Database {
         .doc(id)
         .set(noteappInfoMap);
   }
+
+  static Future<Stream<QuerySnapshot>> getNoteappDetails() async {
+    return await FirebaseFirestore.instance.collection("Noteapp").snapshots();
+  }
 }

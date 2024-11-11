@@ -17,10 +17,11 @@ class _NotePageState extends State<NotePage> {
   TextEditingController descriptionController = TextEditingController();
   TextEditingController dateController = TextEditingController();
   TextEditingController categoryController = TextEditingController();
-  Stream<QuerySnapshot>?NoteappStream;
+  Stream<QuerySnapshot>? NoteappStream;
 
-  getontheload() async{
-    NoteappStream = await Database.
+  getontheload() async {
+    NoteappStream = await Database.getNoteappDetails();
+    setState(() {});
   }
 
   @override
