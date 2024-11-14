@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/adapters.dart';
-import 'package:noteapp_firebase/noteapp.dart';
+import 'package:noteapp_firebase/homepage.dart';
 
 void main() async {
   await Hive.initFlutter();
